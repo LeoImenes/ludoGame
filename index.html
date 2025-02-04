@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <section>
+      <div class="players-modal">
+        <div class="modalTitle">
+          <img class="logo" src="./assets/Logo/Logo2.png" />
+        </div>
+        <div class="form">
+          <div class="inpPlayer Red">
+            <input
+              type="text"
+              class="inpRed"
+              required
+              name="redName"
+              id=""
+              placeholder="Nome do jogador Vermelho"
+            />
+          </div>
+          <div class="inpPlayer Blue">
+            <input
+              type="text"
+              class="inpBlue"
+              required
+              name="blueName"
+              id=""
+              placeholder="Nome do jogador Azul"
+            />
+          </div>
+          <div class="inpPlayer Green">
+            <input
+              type="text"
+              class="inpGreen"
+              name="greenName"
+              required
+              id=""
+              placeholder="Nome do jogador Verde"
+            />
+          </div>
+          <div class="inpPlayer Yellow">
+            <input
+              type="text"
+              class="inpYellow"
+              name="yellowName"
+              required
+              id=""
+              placeholder="Nome do jogador Amarelo"
+            />
+          </div>
+          <div class="dviPlayBtn">
+            <button class="playBtn">Jogar</button>
+          </div>
+        </div>
+      </div>
+      <div id="ludoBoard"></div>
+    </section>
+    <div class="footerRow">
+      <div class="playerInfo">
+        <h1 class="active-player"><span></span></h1>
+        <img src="" class="PawnImage" alt="pawnImage">
+      </div>
+      <div class="buttonList">
+        <button id="reset-btn">Reiniciar Partida</button>
+        <button id="dice-btn" class="btn btn-dice">
+          <img class="dice-value" src="./assets/dice/dice1.png" alt="Dado" />
+        </button>
+        <button onclick="location.reload()">Reiniciar Jogo</button>
+      </div>
+  </body>
+  <script src="./index.js" type="module"></script>
+</html>

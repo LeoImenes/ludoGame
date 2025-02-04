@@ -1,0 +1,352 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+section {
+    color: white;
+    margin: 20px auto;
+}
+
+#ludoBoard {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-collapse: collapse;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #ffffff;
+    align-items: center;
+}
+
+
+.player {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    position: absolute;
+}
+
+.footerRow {
+    box-shadow: 20px 15px 50px .5px#ccc;
+    align-items: center;
+    border: 1px double #000;
+    width: 40%;
+    border-radius: 30px;
+    height: 20vh;
+    display: none;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-top: 40px;
+}
+
+.buttonList {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerRow h1 {
+    color: #000;
+    text-align: start;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+button {
+    padding: 15px;
+    border-radius: 20px;
+    border: none;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    background-color: rgb(0, 0, 0);
+}
+
+button:hover {
+    cursor: pointer;
+    scale: 1.1;
+    background-color: rgb(240, 239, 239);
+}
+
+.btn-dice:hover {
+    scale: 1.1;
+    background-color: transparent;
+
+}
+
+button:active {
+    cursor: pointer;
+    background-color: rgb(240, 239, 239);
+    transform: translateY(4px);
+}
+
+.dice-value {
+    width: 14%;
+}
+
+.playerInfo {
+    padding: 10px;
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.PawnImage {
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 50px;
+    height: 50px;
+}
+
+.Player {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: palevioletred;
+    top: 0;
+    left: 0
+}
+
+#P1 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #ffffffa1;
+    background-image: url('./assets/pawns/P1.png');
+}
+
+#P2 {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    background-color: #ffffffa1;
+    background-image: url('./assets/pawns/P2.png');
+}
+
+#P3 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa1;
+    background-image: url('./assets/pawns/P3.png');
+    position: absolute;
+}
+
+#P4 {
+    width: 100%;
+    height: 100%;
+    background-color: #ffffffa1;
+    background-image: url('./assets/pawns/P4.png');
+    position: absolute;
+
+}
+
+
+.field {
+    width: auto;
+    height: auto;
+    display: flex;
+    position: relative;
+}
+
+
+.players-modal {
+    background-color: #ffffff;
+    border: 10px double #000;
+    display: flex;
+    margin-top: 5%;
+    top: 5%;
+    left: 40%;
+    flex-direction: column;
+    border-radius: 20px;
+    justify-content: space-evenly;
+    position: absolute;
+    align-self: center;
+    justify-self: center;
+    width: 450px;
+    z-index: 3;
+    height: 60%;
+}
+
+.custom-file-upload {
+    border: 1px solid #ccc;
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+
+    border-radius: 10px;
+}
+
+.btn-dice {
+    background-color: transparent;
+}
+
+.divPlayBtn {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modalTitle {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+.form {
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    gap: 25px;
+    height: 60%;
+}
+
+.logo {
+    width: 30%;
+    margin-top: 10px;
+    display: flex;
+
+}
+
+.inpPlayer {
+    width: 100%;
+}
+
+.inpRed,
+.inpRed:focus {
+    background-color: #e75053;
+    color: #fff;
+}
+
+.inpBlue,
+.inpBlue :focus {
+    background-color: #6593f4;
+    color: #fff;
+
+}
+
+.inpGreen,
+.inpGreen:focus {
+    background-color: #49a580;
+    color: #fff;
+
+}
+
+.inpYellow,
+.inpYellow:focus {
+    background-color: #dcc64d;
+    color: #fff;
+
+}
+
+
+::-webkit-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+:-moz-placeholder {
+    /* Firefox 18- */
+    color: rgb(255, 255, 255);
+}
+
+::-moz-placeholder {
+    /* Firefox 19+ */
+    color: rgb(255, 255, 255);
+}
+
+:-ms-input-placeholder {
+    color: rgb(255, 255, 255);
+}
+
+.field {
+    width: 35px;
+    height: 35px;
+    border: 1.5px solid rgb(4, 4, 4);
+    font-size: 12px;
+    text-align: center;
+    color: #fffcfc;
+}
+
+
+h1 {
+    width: 90%;
+    color: rgb(0, 0, 0);
+}
+
+
+.dice-value {
+    width: 90px;
+}
+
+#field.highlight {
+    animation: playerTurnBlink .7s infinite ease-in-out;
+}
+
+.highlight {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+    align-self: center;
+    animation: playableAnimations .7s infinite ease-in-out;
+
+}
+
+.buttonList {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+span {
+    color: #000;
+}
+
+
+@keyframes playableAnimations {
+    0% {
+        border: .1px solid black;
+        border-radius: 50%;
+        transform: translate(1%, 1%)
+    }
+
+    50% {
+        transform: translate(1%, 1%) scale(1.5);
+    }
+
+    100% {
+        transform: translate(1%, 1%)
+    }
+
+}
+
+@keyframes playerTurnBlink {
+    50% {
+        border-color: rgba(255, 255, 255, 0.8);
+    }
+}
