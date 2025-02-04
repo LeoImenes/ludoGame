@@ -46,6 +46,7 @@ export class LudoBoard {
     if (cell) {
       const div = document.createElement("div");
       const img = document.createElement("img");
+      img.className = 'pieceIgm'
       div.appendChild(img);
       div.id = playerId;
       div.className = "player-piece highlight";

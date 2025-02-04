@@ -127,12 +127,16 @@ button:active {
     position: absolute;
     background-color: #ffffffa1;
     background-image: url('./assets/pawns/P1.png');
+    background-size: cover;
 }
+
+
 
 #P2 {
     width: 100%;
     height: 100%;
     position: absolute;
+    background-size: cover;
 
     background-color: #ffffffa1;
     background-image: url('./assets/pawns/P2.png');
@@ -144,6 +148,8 @@ button:active {
     background-color: #ffffffa1;
     background-image: url('./assets/pawns/P3.png');
     position: absolute;
+    background-size: cover;
+
 }
 
 #P4 {
@@ -152,6 +158,7 @@ button:active {
     background-color: #ffffffa1;
     background-image: url('./assets/pawns/P4.png');
     position: absolute;
+    background-size: cover;
 
 }
 
@@ -349,4 +356,83 @@ span {
     50% {
         border-color: rgba(255, 255, 255, 0.8);
     }
+}
+
+/* 576px, 768px, 992px, 1200px e 1400px. */
+@media (max-width: 576px) {
+    .playerInfo {
+        padding: 10px;
+        width: 80%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        ;
+    }
+
+    .PawnImage {
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .footerRow {
+        box-shadow: none;
+        align-items: center;
+        border: none;
+        width: 90%;
+        border-radius: 0px;
+        height: 10vh;
+        display: none;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+    }
+
+    span {
+        font-size: 0.8em;
+    }
+
+    button {
+        font-size: 0.8em;
+
+    }
+
+    .dice-value {
+        width: 70px;
+    }
+
+    #ludoBoard {
+        width: 20%;
+        height: 20%;
+        display: flex;
+        border-collapse: separate;
+    }
+
+    .field {
+        width: 20px;
+        height: 20px;
+
+    }
+
+
+
+    .players-modal {
+        background-color: #ffffff;
+        border: 10px double #000;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        position: absolute;
+        width: 250px;
+        height: 65%;
+        z-index: 3;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+
+
 }
