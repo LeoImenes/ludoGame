@@ -1,6 +1,5 @@
 import { LudoGame } from "../index.js";
 import { PLAYERS, COORDINATES_MAP } from "../utils/constants.js";
-import metalicAudio from "../assets/audio/metallic-clink.wav"
 
 const diceButtonElement = document.querySelector("#dice-btn");
 let playerNames = [];
@@ -33,7 +32,7 @@ export class Elementhandling {
     audio.play();
   }
   static playAvailableAudio() {
-    const audio = new Audio(metalicAudio);
+    const audio = new Audio("/assets/audio/metallic-clink.wav");
     audio.play();
   }
   static playMoveAudio() {
